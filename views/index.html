@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CloudApp</title>
+    <title>Andrea</title>
 
     <style>
         body{
             font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
+            background-color: lightblue;
+            color: darkblue;
             text-align: center;
             padding-top: 60px;
         }
@@ -29,25 +30,61 @@
         p{
             font-size: 18px;
         }
+
+        form{
+            margin-top: 20px;
+        }
+
+        input, button{
+            padding: 10px;
+            margin: 5px;
+        }
+
+        table{
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        table, th, td{
+            border: 1px solid darkblue;
+            padding: 10px;
+        }
+
+        th{
+            background-color: #0077cc;
+            color: white;
+        }
     </style>
 </head>
 <body>
 
     <div class="contenedor">
-        <h1>Aplicación en la Nube ☁️</h1>
+        <h1>Proyecto Andrea Castro</h1>
 
-        <p><strong>Estudiante:</strong> Juan Pérez</p>
-
-        <p>La aplicación está alojada en la nube correctamente.</p>
-
+        <p><strong>Adso:</strong> 35</p>
+        <p>La aplicación funciona correctamente.</p>
         <p>Servidor funcionando 24/7 desde internet.</p>
-
         <p id="fecha"></p>
+
+        <!-- Formulario -->
+        <form>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Tabla -->
+        <table>
+            <tr><th>Estudiante</th><th>Nota</th></tr>
+            <tr><td>Ana</td><td>5.0</td></tr>
+            <tr><td>Carlos</td><td>4.5</td></tr>
+            <tr><td>Andrea</td><td>5.0</td></tr>
+        </table>
     </div>
 
     <script>
         const fecha = new Date();
-
         document.getElementById("fecha").innerHTML =
             "Fecha y hora: " + fecha;
     </script>
